@@ -8,6 +8,13 @@ public class Card {
 	}
 	
 	public int getNum() {
-		return this.num;
+		if(num > 10) {
+			return 10;
+		}
+		return num;
+	}
+	
+	public int getRealNum() {
+		return num;
 	}
 }

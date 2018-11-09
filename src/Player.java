@@ -3,10 +3,14 @@ import java.util.ArrayList;
 public class Player {
 	ArrayList<Card> hands;
 	String playerName;
-	public Player(Card card, String playerName) {
+	int money;
+	int betting;
+	public Player(Card card, String playerName, int money, int betMoney) {
 		this.hands = new ArrayList<>();
 		hands.add(card);
 		this.playerName = playerName;
+		this.money = money;
+		this.betting = betMoney;
 	}
 	
 	public int hit(Deck deck) {//카드를 받는다
