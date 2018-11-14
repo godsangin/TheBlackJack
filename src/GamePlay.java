@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class GamePlay {// 객체로 변경예정
 	Player[] players;
@@ -24,7 +25,8 @@ public class GamePlay {// 객체로 변경예정
 			dealer.hit(deck);
 		}
 		
-		
+		ArrayList<Card> cards = new ArrayList<>();
+		UIContainer ui = new UIContainer(cards, 1);
 		
 	}
 }
