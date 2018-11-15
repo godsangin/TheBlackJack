@@ -25,8 +25,6 @@ public class GamePlay {// 객체로 변경예정
 			dealer.hit(deck);
 		}
 		
-		ArrayList<Card> cards = new ArrayList<>();
-		UIContainer ui = new UIContainer(cards, 1);
-		
+		GameContainer ui = new GameContainer(deck, players);
 	}
 }
