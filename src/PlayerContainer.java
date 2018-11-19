@@ -16,8 +16,10 @@ public class PlayerContainer extends JLabel{
 		this.money = money;
 		cards = new ArrayList<>();
 		setSize((int) (res.getWidth() / 3), 150);
-        
+		Card c = new Card("Clova", 10);
+		JLabel background = new JLabel(new ImageIcon(c.shape + "_" + c.num + ".PNG"));
         setLayout(new FlowLayout(FlowLayout.LEFT));
+        add(background);
         setVisible(true);
 	}
 	
